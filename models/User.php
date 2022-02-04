@@ -4,12 +4,19 @@ namespace app\models;
 
 use yii\db\ActiveRecord;
 
+/**
+ * @property-read mixed $authKey
+ * @property-read mixed $id
+ * @property string $username [varchar(255)]
+ * @property string $password [varchar(255)]
+ * @property string $auth_key [varchar(255)]
+ */
 class User extends ActiveRecord implements \yii\web\IdentityInterface
 {
 
     public static function tableName()
     {
-        return 'user';
+        return 'users';
     }
 
 
